@@ -1,0 +1,10 @@
+BraveSoftware/
+go/
+pulse/
+systemd/
+yay/
+
+
+
+user-dirs.dirs
+user-dirs.locale

@@ -1,0 +1,5 @@
+[font]
+normal = { family = "Lilex Nerd Font", style = "Regular" }
+bold = { family = "Lilex Nerd Font", style = "Bold" }
+italic = { family = "Lilex Nerd Font", style = "Italic" }
+size = 12.0
