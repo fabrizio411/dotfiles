@@ -1,0 +1,64 @@
+### GENERAL ###
+# Open termin<C-LeftRelease>al
+super + Return
+	alacritty
+
+# Program launcher
+super + space
+	rofi -show drun
+
+
+
+### BSPWM ###
+# Reiniciar Bspwm 
+super + Escape 
+  bspc wm -r
+
+# Close window
+super + q
+  bspc node -c
+
+# Switch workspaces
+super + {h,l}
+  bspc desktop -f {prev,next}
+
+# Move windows to workspace
+super + shift + h
+  bspc node -d prev; bspc desktop -f prev
+
+super + shift + l
+  bspc node -d next; bspc desktop -f next
+
+# Swithc monitors
+super + {j,k}
+  bspc monitor -f {prev,next}
+
+# Move window to monitor
+super + shift + j
+  bspc node -m south; bspc monitor -f prev
+
+super + shift + k
+  bspc node -m north; bspc monitor -f next
+
+# Switch window focus
+super + ctrl + {h,j,k,l}
+  bspc node -f {west,south,north,east}
+
+
+
+### SYSTEM ###
+# Lock screen
+super + alt + q
+  slock
+
+# Suspender
+super + alt + p
+  systemctl suspend
+
+# Apagar
+super + alt + shift + p
+  systemctl poweroff
+
+# Logout
+super + ctrl + alt + q
+  bspc quit

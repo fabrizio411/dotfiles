@@ -1,10 +1,28 @@
-BraveSoftware/
-go/
-pulse/
-systemd/
-yay/
+/*
 
+!alacritty/
+!alacritty/**
 
+!bat/
+!bat/**
 
-user-dirs.dirs
-user-dirs.locale
+!bspwm/
+!bspwm/**
+
+!nvim/
+!nvim/**
+
+!polybar/
+!polybar/**
+
+!starship/
+!starship/**
+
+!sxhkd/
+!sxhkd/**
+
+!tmux/
+!tmux/**
+
+!zsh/
+!zsh/**
