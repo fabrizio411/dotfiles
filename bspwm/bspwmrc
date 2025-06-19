@@ -19,11 +19,12 @@ bspc config normal_border_color "#444444"
 bspc config focused_border_color "#88c0d0"
 
 # Inicializar
+
 # Lanzar Polybar por monitor
 killall -q polybar
 sleep 1
 for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-  MONITOR=$m polybar main -c ~/.config/polybar/config.ini &
+  MONITOR=$m ~/.config/polybar/launch.sh &
 done
 
 sxhkd -c ~/.config/sxhkd/sxhkdrc &
