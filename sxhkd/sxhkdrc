@@ -1,11 +1,11 @@
 ### GENERAL ###
 # Open termin<C-LeftRelease>al
 super + Return
-	alacritty
+  alacritty -e zsh -ic 'source ~/.zshrc; nt; exec zsh'
 
 # Program launcher
 super + space
-	rofi -show drun
+	rofi -show drun -theme ~/.config/rofi/launcher.rasi
 
 
 
@@ -16,7 +16,7 @@ super + Escape
 
 # Close window
 super + q
-  bspc node -c
+  bspc node -k
 
 # Switch workspaces
 super + {h,l}

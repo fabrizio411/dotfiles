@@ -27,5 +27,8 @@
 !zsh/
 !zsh/**
 
-!eww/
-!eww/**
+!rofi/
+!rofi/**
+
+!networkmanager-dmenu/
+!networkmanager-dmenu/**
