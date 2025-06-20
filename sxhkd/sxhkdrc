@@ -1,4 +1,7 @@
 ### GENERAL ###
+super + shift + r
+	pkill -USR1 -x sxhkd
+
 # Open termin<C-LeftRelease>al
 super + Return
   alacritty -e zsh -ic 'source ~/.zshrc; nt; exec zsh'
@@ -18,9 +21,9 @@ super + Escape
 super + q
   bspc node -k
 
-# Switch workspaces
+# Switch to next workspace
 super + {h,l}
-  bspc desktop -f {prev,next}
+  ~/.config/sxhkd/switch-desktop.sh {prev,next}
 
 # Move windows to workspace
 super + shift + h
