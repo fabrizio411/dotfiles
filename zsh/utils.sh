@@ -29,3 +29,9 @@ conf() {
   cd ~/.config || return 1
   nvim
 }
+
+gg() {
+  ga
+  gcu
+  gp
+}
