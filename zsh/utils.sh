@@ -31,7 +31,8 @@ conf() {
 }
 
 gg() {
+  local msg="${*:-Update}"
   ga
-  gcu
+  gc "$msg"
   gp
 }
