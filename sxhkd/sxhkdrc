@@ -23,7 +23,7 @@ super + q
 
 # Switch to next workspace
 super + {h,l}
-  ~/.config/sxhkd/switch-desktop.sh {prev,next}
+  ~/.config/sxhkd/scripts/switch-desktop.sh {prev,next}
 
 # Move windows to workspace
 super + shift + h
@@ -34,7 +34,7 @@ super + shift + l
 
 # Swithc monitors
 super + {j,k}
-  bspc monitor -f {prev,next}
+  ~/.config/sxhkd/scripts/switch-monitor.sh
 
 # Move window to monitor
 super + shift + j
